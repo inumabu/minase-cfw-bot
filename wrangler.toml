@@ -1,0 +1,7 @@
+name = "minase-cfw-bot"
+main = "src/index.js"
+compatibility_date = "2026-10-07"
+
+[vars]
+# Discord Interactions を使う場合だけ設定します。
+# DISCORD_PUBLIC_KEY = "..."

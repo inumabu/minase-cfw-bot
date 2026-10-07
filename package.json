@@ -1,0 +1,16 @@
+{
+  "name": "minase-cfw-bot",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Cloudflare Worker version of /omikuji, /random, /today",
+  "type": "module",
+  "scripts": {
+    "dev": "wrangler dev",
+    "deploy": "wrangler deploy",
+    "check": "node --check src/index.js && node --check src/omikuji.js && node --check src/random.js && node --check src/today.js",
+    "register:commands": "node scripts/register-commands.mjs"
+  },
+  "devDependencies": {
+    "wrangler": "^4.0.0"
+  }
+}
